@@ -3,22 +3,16 @@
 #define GREEN 5
 #define RED 6
 #define delayTime 10 // fading time between colors
-
-// define variables
-int redVal;
-int greenVal;
-int blueVal;
-int overallVal;
-int colorNum;
+  int colorNum;
 
 void setup() {
   // put your setup code here, to run once:
   pinMode(RED, OUTPUT);
   pinMode(GREEN, OUTPUT);
   pinMode(BLUE, OUTPUT);
-  analogWrite(RED, redVal);
-  analogWrite(GREEN, greenVal);
-  analogWrite(BLUE, blueVal);
+  analogWrite(RED, 0);
+  analogWrite(GREEN, 0);
+  analogWrite(BLUE, 0);
 
 }
 
